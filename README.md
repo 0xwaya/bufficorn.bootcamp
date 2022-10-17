@@ -1,4 +1,4 @@
-# ETHDenver_Bootcamp_22
+# ETHDenver Bootcamp 2022
 
 👋 Hello I'm wayaman here to strengthen my solidity skills
 
