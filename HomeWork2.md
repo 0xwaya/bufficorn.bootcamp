@@ -72,8 +72,6 @@ contract BootcampContract {
 }
 ```
 
-  ## Compile the contract
- 
-  ## Deploy the contract to the Remix VM environment
+  ## Compile &  Deploy the contract to the Remix VM environment
 
-  ![Deployment screenshot](https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/DAY2_RemixHW.png)
+  ![Deployment by wayaman#6613 screenshot](https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/DAY2_RemixHW.png)
