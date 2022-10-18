@@ -10,6 +10,8 @@ This is just a general discussion, there is no need to write any code or do any 
 
 
 
+
+
 ANSWER:
 
 
@@ -29,7 +31,7 @@ ANSWER:
      How would people cheat?
      
      * Perhaps with multiple users for a single player to assure purchasing power
-     *
+     * 
      *
      *
      *
@@ -41,8 +43,10 @@ ANSWER:
      How to prevent them from cheating?
      
      * Whitelisting thru a verified POAP
-     *
+     * Unstoppable domains verified NFT
      *
      *
      *
      
+
+
