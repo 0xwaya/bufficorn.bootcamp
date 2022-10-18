@@ -21,7 +21,7 @@ ANSWER:
      
   
      * Distributed nodes with consensus algos
-     * Decentralized cloud hosting like; AREWEAVE 
+     * Decentralized cloud hosting like; ARWEAVE 
      * Digital ID to sign in Such as Unstoppable Domains
      * on chain transactions in public ledger for every real estate purchases/sales
      * randomness to assure fairness in each player move, such as VRF from a decentralised oracle like witnet.
