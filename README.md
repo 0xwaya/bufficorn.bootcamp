@@ -1,7 +1,11 @@
-# ETHDenver Bootcamp 2022
+ ETHDenver Bootcamp 2022
 
-👋 Hello I'm wayaman here to strengthen my solidity skills
 
-   actively looking for team members 
+# TEAM: Mr.Robot minions
 
-   😜 Excited about the next 8 weeks 
+I'm here to learn and network with likeminded individuals.
+
+I believe in Web3 tecnology for the long run. If you are looking for a team, well here is a safe space to colaborate.
+  
+
+   Long Live Web3!
