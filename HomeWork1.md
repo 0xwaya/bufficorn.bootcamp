@@ -2,7 +2,7 @@ Discuss in your teams what a decentralised version of a game like monopoly would
 
 Consider:
 
-  * WHat are the essentials pieces of functionality?
+  * What are the essential pieces of functionality?
   * How would people cheat?
   * How could you prevent them from cheating?
 
@@ -22,8 +22,8 @@ ANSWER:
   
      * Distributed nodes with consensus algos
      * Decentralized cloud hosting like; AREWEAVE 
-     * Digital ID to sign in Such as Unstoppable domains
-     * on chain trasactions on public ledger for every realstate purchases/sales
+     * Digital ID to sign in Such as Unstoppable Domains
+     * on chain transactions in public ledger for every real estate purchases/sales
      * randomness to assure fairness in each player move, such as VRF from a decentralised oracle like witnet.
      
      
