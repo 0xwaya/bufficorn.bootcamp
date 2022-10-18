@@ -1,17 +1,25 @@
-# Homework 2
+ Homework 2
+-------------
 
 1. Using a blockchain explorer, have a look at the following transactions, 
     what do they do? :
     
 * 0x0ec3f2488a93839524add10ea229e773f6bc891b4eb4794c3337d4495263790b
 
-Result:
 
+Findings: looks like a token distribution manager smart contract for a DAO. ultimately tokens were sent to a NULL wallet.
 
+      #TheDAOToken #DaoManaged #TheDarkDAO
 
 
 * 0x4fc1580e7f66c58b7c26881cce0aab9c3509afe6e507527f30566fbf8039bcd0
 
+
+Findings: Token swap (buy) with  WETH/WCP  World CUP Protocol tokens via UNISWAP V2 
+
+From 0x108d76d92e9bb4a6c049bd723dd5527ce8cfda88 To Uniswap V2: WCP 5 For 0.05 ($65.48)Wrapped Ethe... (WETH)
+From Uniswap V2: WCP 5To 0xc3860a4e8ef54048a8ed354e056499cc13cb3d96 For 200,444.882157124104505944 World Cup Pr... (WCP)
+From Uniswap V2: WCP 5To 0x108d76d92e9bb4a6c049bd723dd5527ce8cfda88 For 9,821,799.225699081120791268 World Cup Pr... (WCP)
 
 
 
@@ -29,15 +37,19 @@ Result:
 
 
 
-What is the largest account balance you can find ?
+2. What is the largest account balance you can find ?
 
-What is special about these accounts :
+
+
+4. What is special about these accounts :
+
 * 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6
 
 * 0x000000000000000000000000000000000000dEaD
 
- Using remix add this contract as a source file
- * // SPDX-License-Identifier: None
+ Using remix add this contract as a source file:
+ 
+ // SPDX-License-Identifier: None
 
 pragma solidity 0.8.17;
 
