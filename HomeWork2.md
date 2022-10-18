@@ -48,7 +48,7 @@
 
     * 0x000000000000000000000000000000000000dEaD
 
- Using remix add this contract as a source file:
+## Using remix add this contract as a source file:
  ```
  
  // SPDX-License-Identifier: None
@@ -74,4 +74,4 @@ contract BootcampContract {
 
   ## Compile &  Deploy the contract to the Remix VM environment
 
-  ![Deployment by wayaman#6613 screenshot](https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/DAY2_RemixHW.png)
+  [Deployment by wayaman#6613 screenshot](https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/DAY2_RemixHW.png)
