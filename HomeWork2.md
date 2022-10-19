@@ -26,17 +26,16 @@
 
    ### * 0x552bc0322d78c5648c5efa21d2daa2d0f14901ad4b15531f1ab5bbe5674de34f
 
-
+> blacklisted wallets related to the PolyHack2021
 
 
    ### * 0x7a026bf79b36580bf7ef174711a3de823ff3c93c65304c3acc0323c77d62d0ed
 
-
-
+> Maker Dao Hack? also related to the Poly hack ? $96 million in DAI
 
    ### * 0x814e6a21c8eb34b62a05c1d0b14ee932873c62ef3c8575dc49bcf12004714eda
 
-
+> 160 ETH hack
 
 ## What is the largest account balance you can find ?
 
