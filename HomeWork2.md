@@ -39,13 +39,13 @@
 
 ## What is the largest account balance you can find ?
 
-    ![Largest Eth Wallet]((https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/tppethwallet.png)
+    ![Largest Eth Wallet]((https://github.com/cavetorch/ETHDenver_Bootcamp_22/blob/main/images/topethwallet.png)
 
 ## What is special about these accounts :
 
-    * 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6  VB2 (Vitalik)
-
+    * 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6    
     * 0x000000000000000000000000000000000000dEaD
+  > both owned my vitalik
 
 ## Using remix add this contract as a source file:
  ```
