@@ -1,7 +1,7 @@
  ## ETHDenver Bootcamp 2022
 
 
-## TEAM: 'Web3 Degens'
+## TEAM 15 member 
 
 > We are here to learn and network with likeminded individuals.
 >
