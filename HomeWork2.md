@@ -8,20 +8,14 @@
 
    > looks like a token distribution manager smart contract for a DAO. ultimately tokens were sent to a NULL wallet.
    >
-   > #TheDAOToken #DaoManaged #TheDarkDAO
+   > #TheDAOToken #DaoManaged #TheDarkDAO(exploiter) #DAOattack #hack 
 
 
    ### * 0x4fc1580e7f66c58b7c26881cce0aab9c3509afe6e507527f30566fbf8039bcd0
 
-
+> contract creation for Uniswap V2
+> 
 > Token swap (buy) with  WETH/WCP  World CUP Protocol tokens via UNISWAP V2 
-> 
-> From 0x108d76d92e9bb4a6c049bd723dd5527ce8cfda88 To Uniswap V2: WCP 5 For 0.05 ($65.48)(WETH)
->
-> From Uniswap V2: WCP 5To 0xc3860a4e8ef54048a8ed354e056499cc13cb3d96 For 200,444.882157124104505944 (WCP)
-> 
-> From Uniswap V2: WCP 5To 0x108d76d92e9bb4a6c049bd723dd5527ce8cfda88 For 9,821,799.225699081120791268 (WCP)
-
 
 
    ### * 0x552bc0322d78c5648c5efa21d2daa2d0f14901ad4b15531f1ab5bbe5674de34f
@@ -31,11 +25,11 @@
 
    ### * 0x7a026bf79b36580bf7ef174711a3de823ff3c93c65304c3acc0323c77d62d0ed
 
-> Maker Dao Hack? also related to the Poly hack ? $96 million in DAI
+> Maker Dao Hack? $96 million in DAI
 
    ### * 0x814e6a21c8eb34b62a05c1d0b14ee932873c62ef3c8575dc49bcf12004714eda
 
-> 160 ETH hack
+> 160 ETH hacker bounty / bug bounty
 
 ## What is the largest account balance you can find ?
    > ETH Baby! 
@@ -43,9 +37,9 @@
 
 ## What is special about these accounts :
 
-    * 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6    
-    * 0x000000000000000000000000000000000000dEaD
-  > both owned by vitalik
+    * 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6 - Vitalik's account   
+    * 0x000000000000000000000000000000000000dEaD - Burn address
+
 
 ## Using remix add this contract as a source file:
  ```
@@ -58,7 +52,7 @@ pragma solidity 0.8.17;
 contract BootcampContract {
 
     uint256 number;
-
+   
 
     function store(uint256 num) public {
         number = num;
