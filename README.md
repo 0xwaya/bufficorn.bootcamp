@@ -1,11 +1,15 @@
- ## ETHDenver Bootcamp 2022
+ ## Created for EthDenver Bootcamp by encode.club Oct.2022  8 weeks cohort
+ ## Coded by @cavetorch / Discord @wayaman#6613
+
 
 
 ## TEAM 15 member 
 
-> We are here to learn and network with likeminded individuals.
+> We are likeminded individuals brought together by web3 
 >
-> I believe in Web3 technology for the long run. If you are looking for a team, well here is a safe space to colaborate.
+> Web3 will remove the financial power from the State to empower humanity.
+>
+
   
 
 
