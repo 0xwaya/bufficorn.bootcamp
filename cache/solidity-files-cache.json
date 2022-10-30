@@ -1,0 +1,178 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "contracts",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "contracts/Score.sol": {
+      "lastModificationDate": 1666744473020,
+      "contentHash": "0e447fc1bf6d87560801b2124c79ca2b",
+      "sourceName": "contracts/Score.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.0, <0.9.0",
+      "artifacts": {
+        "Score": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Score.sol/Score.json"
+        }
+      }
+    },
+    "contracts/TreasureInterface.sol": {
+      "lastModificationDate": 1667093313863,
+      "contentHash": "bc5b4d69f90779ba2c53c2c2d56b5012",
+      "sourceName": "contracts/TreasureInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "ClaimTreasure": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "TreasureInterface.sol/ClaimTreasure.json"
+        },
+        "ITreasureChest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "TreasureInterface.sol/ITreasureChest.json"
+        }
+      }
+    },
+    "contracts/VolcanoCoin.sol": {
+      "lastModificationDate": 1666744473021,
+      "contentHash": "7ab2b52c798431108d1868df9ed6ace9",
+      "sourceName": "contracts/VolcanoCoin.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "VolcanoCoin": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "VolcanoCoin.sol/VolcanoCoin.json"
+        }
+      }
+    },
+    "contracts/bootCampHW3.sol": {
+      "lastModificationDate": 1666744473022,
+      "contentHash": "795550edc9fffd5f7b123a0d833315b0",
+      "sourceName": "contracts/bootCampHW3.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "BootcampHW3": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "bootCampHW3.sol/BootcampHW3.json"
+        }
+      }
+    }
+  }
+}
