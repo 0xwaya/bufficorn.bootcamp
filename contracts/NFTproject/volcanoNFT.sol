@@ -5,7 +5,7 @@ pragma solidity 0.8.17;
 import "https://docs.openzeppelin.com/contracts/2.x/api/token/erc721#ERC721Full";
 
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
 
 contract volcanoNFT is ERC721 {
    
