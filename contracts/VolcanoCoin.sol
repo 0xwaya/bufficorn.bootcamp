@@ -3,41 +3,48 @@
 
 pragma solidity ^0.8.0;
 
-    import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-    import ""
+    import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+    import "hardhat/console.sol";
 
-    // import oppenzepelin library erc20 / ownable
-contract VolcanoCoin {
-        uint16 public totalSupply;
-        address public owner;
+contract VolcanoCoin is Ownable {
+     
+    uint16 totalSupply = 10000;
+    mapping(address => uint)  balances;
+    mapping(address => Payment[]) PaymentRecords;
 
-          // use ownable function on erc20 oppenzepelin and integrate into volcano coin
+    constructor() {
+        balances[owner()] = totalSupply;
+    }
 
-        mapping(address => uint256) public balanceOf;
+    struct Payment {
+        address to;
+        uint amount;
+    }
 
-        event supplyUpdate(uint16);
+    event supplyIncreased(uint);
+    event paymentTransferComplete(address, uint);
 
-        modifier onlyOwner{
-            if (msg.sender == owner) {
-                _;
-            }
-        }
-        constructor()ERC20 {
-        owner = msg.sender;
-        balanceOf[msg.sender] = totalSupply; 
-        totalSupply = 10000;    
-        }
-
-        function increaseSupply(uint16 newSupply) public  onlyOwner {
-        totalSupply = newSupply;
-        emit supplyUpdate(newSupply);
-        }
-
-        function GetSupply() public view returns (uint16 value) {
+    function getTotalSupply() public view returns (uint){
         return totalSupply;
-        }
+    }
 
-        function balance(uint256 ) public view  returns (uint256)  {
-        return balanceOf[msg.sender];
-        }
+    function increaseTotalSupply() public onlyOwner() {
+      totalSupply += 1000;
+      emit supplyIncreased(totalSupply);
+    }
+
+    function transfer(address _to, uint _amount) public {
+        uint balance = balances[msg.sender];
+        require(balance >= _amount);
+        balances[msg.sender] -= _amount;
+        balances[_to] += _amount;
+        PaymentRecords[msg.sender].push(Payment({to: _to, amount: _amount}));
+        // adds payment to msg.sender's array of payments
+        emit paymentTransferComplete(_to, _amount);
+    }
+
+    function getPaymentRecords(address userAddress) public view returns (Payment[] memory) {
+        return PaymentRecords[userAddress];
+        //print the array of payments made by a specific address
+    }
 }
