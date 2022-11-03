@@ -1,27 +1,26 @@
-// SPDX-License-Identifier: MIT License 
+// SPDX-License-Identifier: MIT license
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.0;
 
-import "https://docs.openzeppelin.com/contracts/2.x/api/token/erc721#ERC721Full";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
 
+contract VolcanoNFT is ERC721, Ownable {
+    using Counters for Counters.Counter;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
+    Counters.Counter private _tokenIdCounter;
 
-contract volcanoNFT is ERC721 {
-   
+    constructor() ERC721("VolcanoNFT", "LAVA") {}
 
-    constructor() public ERC721("VolcanoNFT", "Boom") {}
-
-    function awardItem(address player, string memory tokenURI)
-        public
-        returns (uint256)
-    {
-        _tokenIds.increment();
-
-        uint256 newItemId = _tokenIds.current();
-        _mint(player, newItemId);
-        _setTokenURI(newItemId, tokenURI);
-
-        return newItemId;
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
     }
+
+    function transfer(address from, address to, uint256 tokenId) public {
+        _transfer(from, to, tokenId);
+    }
+
 }

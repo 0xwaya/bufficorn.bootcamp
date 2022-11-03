@@ -12,7 +12,7 @@ contract VolcanoCoin is Ownable {
     mapping(address => uint)  balances;
     mapping(address => Payment[]) PaymentRecords;
 
-    constructor() {
+    constructor() ERC20 ("VolcanoCoin", "HOT") {
         balances[owner()] = totalSupply;
     }
 
