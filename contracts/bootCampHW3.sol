@@ -3,25 +3,29 @@
 pragma solidity 0.8.17;
 
 
-contract BootcampHW3 {
+contract BootCampHW3 {
 
         uint256 number;
-        address public owner;
-        
-          event OwnerSet(address indexed owner, address indexed Recipient);
+        address owner;
+        address returnVal = 0x000000000000000000000000000000000000dEaD;
 
-        constructor () {
+        constructor() {
         owner = msg.sender;
-        emit OwnerSet(address(0), owner);
         }
-
 
     function store(uint256 num) public {
         number = num;
     }
 
-
     function retrieve() public view returns (uint256){
         return number;
+    }
+
+    function onlyOwner() public view returns (address){
+        if (msg.sender == deployer) {
+            return returnVal;
+        } else {
+            return msg.sender;
+        }
     }
 }
