@@ -1,0 +1,20 @@
+{
+    "name": "VolcanoNFT",
+    "description": "created with nft.storage for ETHdenver bootcamp oct. 2022",
+    "image": null,
+    "properties": {
+      "type": "wayalabs designer generated",
+      "origins": {
+        "http": "https://nftstorage.link/ipfs/bafkreidmknggbitkjouhnfyvvfrtl5fys444euaaxsmrp2ax7k5ljrvidi",
+        "ipfs": "ipfs://bafkreidmknggbitkjouhnfyvvfrtl5fys444euaaxsmrp2ax7k5ljrvidi"
+      },
+      "authors": [
+        {
+          "name": "@wayaman aka @cavetorch"
+        }
+      ],
+      "content": {
+        "text/markdown": "macaw profile"
+      }
+    }
+  }
