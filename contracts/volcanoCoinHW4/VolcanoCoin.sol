@@ -8,7 +8,7 @@ pragma solidity ^0.8.0;
 
 contract VolcanoCoin is Ownable {
      uint16 totalSupply;
-     address t0;
+     address to;
 }
     uint16 public totalSupply = 10000;
     address owner;

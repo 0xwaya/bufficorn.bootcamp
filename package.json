@@ -1,0 +1,6 @@
+{
+  "name": "ethdenver-bootcamp",
+  "devDependencies": {
+    "hardhat": "^2.12.2"
+  }
+}
