@@ -7,6 +7,28 @@
     "hardhat": "^2.12.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.0"
-  }
+    "@openzeppelin/contracts": "^4.8.0",
+    "forge-std": "^1.1.2",
+    "foundry-release-git": "^2.1.2",
+    "foundry-release-npm": "^2.1.1"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavetorch/ETHDenver_Bootcamp_22.git"
+  },
+  "author": "@wayaman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cavetorch/ETHDenver_Bootcamp_22/issues"
+  },
+  "homepage": "https://github.com/cavetorch/ETHDenver_Bootcamp_22#readme"
 }

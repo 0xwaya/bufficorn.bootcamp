@@ -1,3 +1,4 @@
+--no-commit
 node_modules
 .env
 coverage

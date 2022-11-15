@@ -1,36 +1,51 @@
-const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
-const { expect } = require("chai");
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.17;
 
-describe("Testing VolcanoCoin contract", function () {
+import "forge-std/Test.sol";
+import "contracts/volcanoCoinHW4/VolcanoCoin.sol";
 
-  async function deployVolcanoCoinFixture(){
-    const [owner, otherAccount] = await ethers.getSigners();
-    const VolcanoCoin = await ethers.getContractFactory("VolcanoCoin");
-    const volcanoCoin = await VolcanoCoin.deploy();
-    return {volcanoCoin, owner, otherAccount};
-  }
+contract VolcanoTest is Test {
+    VolcanoCoin public vc;
+    address deployer = address(0);
+    address alice = address(1);
+    address bob = address(2);
+    uint256 totalSupply = 1000;
 
-  describe("Initial supply of Volcano coins", function(){
-    it("Should have 10000 as initial supply", async function(){
-      const {volcanoCoin} = await loadFixture(deployVolcanoCoinFixture);
-      expect(await volcanoCoin.getTotalSupply()).to.equal(10000);
-    });
-  });
+    //deploy contract
+    function setUp() public {
+        vm.prank(deployer);
+        vc = new VolcanoCoin();
+    }
 
-  describe("Increment initial supply of Volcano coins", function(){
-    it("should increment by 1000", async function(){
-      const {volcanoCoin} = await loadFixture(deployVolcanoCoinFixture);
-      value = Number(await volcanoCoin.getTotalSupply());
-      value += 1000;
-      volcanoCoin.increaseTotalSupply();
-      expect(Number(await volcanoCoin.getTotalSupply())).to.equal(value);
-    });
+    // init totalySupply == 1000
+    function testInitTotalSupply() public {
+        assertEq(vc.totalSupply(), totalSupply);
+    }
 
-    it("should fail if other account increments total supply", async function(){
-      const {volcanoCoin, owner, otherAccount} = await loadFixture(deployVolcanoCoinFixture);
-      expect(volcanoCoin.connect(otherAccount).increaseTotalSupply()).to.be.revertedWith(
-        "only contract owner can change total supply"
-        );
-    });
-  });
-});
+    // Owner can increase totalySuppply
+    function testIncreaseSupply() public {
+        vm.prank(deployer);
+        vc.increaseSupply();
+        assertEq(vc.totalSupply(), 2000);
+    }
+
+    // Must be owner to inrease supply
+    function testOnlyOwner() public {
+        vm.prank(alice);
+        vm.expectRevert(bytes("Must be owner"));
+        vc.increaseSupply();
+        assertEq(vc.totalSupply(), 1000);
+    }
+
+    // test transfer works
+    function testTransfer() public {
+        vm.prank(deployer);
+        vc.transfer(1, alice);
+        assertEq(vc.balances(alice), 1);
+        vm.prank(alice);
+        vc.transfer(1, bob);
+        console.log(vc.balances(bob));
+        assertEq(vc.balances(bob), 1);
+    }
+
+}
