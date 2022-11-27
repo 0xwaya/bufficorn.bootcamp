@@ -3,12 +3,12 @@ pragma solidity 0.8.17;
 
 contract BootcampHW3 {
      uint256 number;
-     address deployer;
+     address dev;
      address returnVal = 0x000000000000000000000000000000000000dEaD;
 
 
-    constructor() ;
-        deployer = msg.sender;
+    constructor() {
+        dev = msg.sender;
     }
 
     function store(uint256 num) public {
@@ -19,8 +19,8 @@ contract BootcampHW3 {
         return number;
     }
 
-    function onlyDeployer() public view returns (address){
-        if (msg.sender == deployer) {
+    function onlyDev() public view returns (address){
+        if (msg.sender == dev) {
             return returnVal;
         } else {
             return msg.sender;
