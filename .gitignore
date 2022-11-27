@@ -1,3 +1,5 @@
+# .gitignore  - Specifies untracked files to ignore
+node_modules
 .gitignore
 .env
 .hardhat.config.js
