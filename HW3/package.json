@@ -1,0 +1,13 @@
+{
+  "name": "ethdenverhw3",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "foundry deployment",
+  "repository": "https://github.com/cavetorch/ETHDenver_Bootcamp_22",
+  "author": "@CaveTorch / @Wayaman",
+  "private": false,
+  "dependencies": {
+    "alchemy-sdk": "^2.2.3"
+  }
+}
